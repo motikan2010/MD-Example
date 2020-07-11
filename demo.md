@@ -1,267 +1,109 @@
-# Block Elements
-
-## Headers 見出し
-
-先頭に`#`をレベルの数だけ記述します。
-
+## --- Headers ---
 ```
-# 見出し1
-## 見出し2
-### 見出し3
-#### 見出し4
-##### 見出し5
-###### 見出し6
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
 ```
 
-# 見出し1
-## 見出し2
-### 見出し3
-#### 見出し4
-##### 見出し5
-###### 見出し6
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
 
-## Block 段落
-
-空白行を挟むことで段落となります。
-
+## --- Emphasis ---
 ```
-段落1
-(空行)
-段落2
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
 ```
 
-段落1
+*This text will be italic*
+_This will also be italic_
 
-段落2
+**This text will be bold**
+__This will also be bold__
 
-## Br 改行
+_You **can** combine them_
 
-改行の前に半角スペース`  `を2つ記述します。
-
+## --- Lists ---
+### Unordered
 ```
-hoge
-fuga(スペース2つ)
-piyo
-```
-
-hoge
-fuga  
-piyo
-
-## Blockquotes 引用
-
-先頭に`>`を記述します。ネストは`>`を多重に記述します。
-
-```
-> 引用  
-> 引用
->> 多重引用
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 ```
 
-> 引用  
-> 引用
->> 多重引用
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
-## Code コード
-
-`` `バッククオート` `` 3つ、あるいはダッシュ`~`３つで囲みます。
-
+### Ordered
 ```
-print 'hoge'
-```
-
-```
-print 'hoge'
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 ```
 
-### インラインコード
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
 
-`` `バッククオート` `` で単語を囲むとインラインコードになります。
-
+## --- Images ---
 ```
-これは `インラインコード`です。
-```
-
-これは `インラインコード`です。
-
-## pre 整形済みテキスト
-
-半角スペース4個もしくはタブで、コードブロックをpre表示できます
-
-```
-    class Hoge
-        def hoge
-            print 'hoge'
-        end
-    end
+![Sample Image](https://user-images.githubusercontent.com/3177297/87229263-afa36380-c3e1-11ea-9f7f-86522f3f0893.png)
 ```
 
-    class Hoge
-        def hoge
-            print 'hoge'
-        end
-    end
+![Sample Image](https://user-images.githubusercontent.com/3177297/87229263-afa36380-c3e1-11ea-9f7f-86522f3f0893.png)
 
-## Hr 水平線
-
-アンダースコア`_` 、アスタリスク`*`、ハイフン`-`などを3つ以上連続して記述します。
-
+## --- Links ---
 ```
-hoge
-***
-hoge
-___
-hoge
----
+http://github.com - automatic!
+[GitHub](http://github.com)
 ```
 
-hoge
-***
-hoge
-___
-hoge
----
+http://github.com - automatic!
+[GitHub](http://github.com)
 
-# Lists
-
-## Ul 箇条書きリスト
-
-ハイフン`-`、プラス`+`、アスタリスク`*`のいずれかを先頭に記述します。  
-ネストはタブで表現します。
-
+## --- Blockquotes ---
 ```
-- リスト1
-    - リスト1_1
-        - リスト1_1_1
-        - リスト1_1_2
-    - リスト1_2
-- リスト2
-- リスト3
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
 ```
 
-- リスト1
-    - リスト1_1
-        - リスト1_1_1
-        - リスト1_1_2
-    - リスト1_2
-- リスト2
-- リスト3
+As Kanye West said:
 
-## Ol 番号付きリスト
+> We're living the future so
+> the present is our past.
 
-`番号.`を先頭に記述します。ネストはタブで表現します。  
-番号は自動的に採番されるため、すべての行を1.と記述するのがお勧めです。
-
+## --- Inline code ---
 ```
-1. 番号付きリスト1
-    1. 番号付きリスト1-1
-    1. 番号付きリスト1-2
-1. 番号付きリスト2
-1. 番号付きリスト3
+I think you should use an
+`<addr>` element here instead.
 ```
 
-1. 番号付きリスト1
-    1. 番号付きリスト1-1
-    1. 番号付きリスト1-2
-1. 番号付きリスト2
-1. 番号付きリスト3
+I think you should use an
+`<addr>` element here instead.
 
-# Span Elements
-
-## Link リンク
-
-`[表示文字](URL)`でリンクに変換されます。
-
+## --- Tables ---
 ```
-[Google](https://www.google.co.jp/)
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 ```
 
-[Google](https://www.google.co.jp/)
-
-### 外部参照リンク
-
-URLが長くて読みづらくなる場合や同じリンクを何度も使用する場合は、リンク先への参照を定義できます。
-
-```
-[Googleを見る][Google]
-[Google]: http://www.yahoo.co.jp
-```
-
-[Googleを見る][Google]
-[Google]: http://www.yahoo.co.jp
-
-## 強調
-### em
-
-アスタリスク`*`もしくはアンダースコア`_`1個で文字列を囲みます。
-
-```
-これは *イタリック* です
-これは _イタリック_ です
-```
-
-これは *イタリック* です
-これは _イタリック_ です
-
-### strong
-
-アスタリスク`*`もしくはアンダースコア`_`2個で文字列を囲みます。
-
-```
-これは **ボールド** です
-これは __ボールド__ です
-```
-
-これは **ボールド** です
-これは __ボールド__ です
-
-### em + strong
-
-アスタリスク`*`もしくはアンダースコア`_`3個で文字列を囲みます。
-
-```
-これは ***イタリック＆ボールド*** です
-これは ___イタリック＆ボールド___ です
-```
-
-これは ***イタリック＆ボールド*** です
-これは ___イタリック＆ボールド___ です
-
-## Images 画像
-
-先頭の`!`で画像の<img>と認識されます。画像の大きさなどの指定をする場合はimgタグを使用します。
-
-```
-![alt](画像URL)
-![代替文字列](URL "タイトル")
-
-<img src="attach:cat.jpg" alt="attach:cat" title="attach:cat" width="200" height="200">
-```
-
-# Table 表
-
-`-`と`|`を使ってtableを作成します。
-
-```
-| TH1 | TH2 |
-----|---- 
-| TD1 | TD3 |
-| TD2 | TD4 |
-```
-
-| TH1 | TH2 |
-----|---- 
-| TD1 | TD3 |
-| TD2 | TD4 |
-
-```
-| 左揃え | 中央揃え | 右揃え |
-|:---|:---:|---:|
-|1 |2 |3 |
-|4 |5 |6 |
-```
-
-| 左揃え | 中央揃え | 右揃え |
-|:---|:---:|---:|
-|1 |2 |3 |
-|4 |5 |6 |
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
