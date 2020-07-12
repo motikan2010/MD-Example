@@ -13,5 +13,4 @@
 
 ## 3. Select convert files
 
-![](https://user-images.githubusercontent.com/3177297/87238281-94fdd880-c43b-11ea-96c7-c17b59a6658c.png)
-
+![](https://user-images.githubusercontent.com/3177297/87238341-5ae10680-c43c-11ea-8265-f05bf3285389.png)
