@@ -13,4 +13,13 @@
 
 ## 3. Select convert files
 
+- 3-1. Check target files.
+
 ![](https://user-images.githubusercontent.com/3177297/87238341-5ae10680-c43c-11ea-8265-f05bf3285389.png)
+
+
+## 4. Convert to PDF from MD.
+
+- 4-1. Press "変換" button
+
+![](https://user-images.githubusercontent.com/3177297/87238430-684ac080-c43d-11ea-8543-27108c7b5bb4.png)
